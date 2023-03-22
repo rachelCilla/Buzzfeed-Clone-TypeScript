@@ -5,10 +5,11 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 
 app.get("/quiz-item", async (req: Request, res: Response) => {
   try {
+    // @ts-ignore
     const response: AxiosResponse = await axios.get(process.env.URL, {
       headers: {
         "X-Cassandra-Token": process.env.TOKEN,
