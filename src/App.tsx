@@ -29,11 +29,21 @@ const unansweredIds = quiz?.content?.map(({id}: Content)=> id)
 setUnansweredQuestionIds(unansweredIds)
 },[quiz])
 
-
 console.log(unansweredQuestionIds)
 
- {/* Renders the Title, Subtitle, and a series of questions represented by 'QuestionsBlock' components*/}
-  return (
+// scroll to highest unanswered question (by id)
+useEffect(() => {
+  if (unansweredQuestionIds) {
+  const highestId= Math.min(...unansweredQuestionIds)
+  const highestElement = document.getElementById(String(highestId))
+  highestElement?.scrollIntoView({behavior: 'smooth'})
+  }
+},[unansweredQuestionIds])
+
+
+//  Renders the Title, Subtitle, and a series of questions represented by 'QuestionsBlock' components
+  
+ return (
     <div className='app'>
       <Title title={quiz?.title} subtitle={quiz?.subtitle}/>
       {/* the map method iterates over each element in the 'quiz.content' array. For each element, a 'QuestionsBlock' Component is rendered */}
