@@ -1,75 +1,84 @@
-import React, {useState, useEffect} from 'react';
-import Title from './components/Title';
-import { QuizData, Content } from '../interfaces';
-import QuestionsBlock from './components/QuestionsBlock';
-import AnswerBlock from './components/AnswerBlock';
+import React, { useState, useEffect, createRef } from 'react'
+import Title from './components/Title'
+import QuestionsBlock from "./components/QuestionsBlock"
+import AnswerBlock from "./components/AnswerBlock"
+import { QuizData, Content } from '../interfaces'
 
-function App() {
+const App = () => {
+    const [quiz, setQuiz] = useState<QuizData | null>()
+    const [chosenAnswerItems, setChosenAnswerItems] = useState<string[]>([])
+    const [ unansweredQuestionIds, setUnansweredQuestionIds] = useState<number[] | undefined>([])
+    const [showAnswer, setShowAnswer] = useState<boolean>(false)
 
-  const [quiz, setQuiz] = useState<QuizData | null>()
-  const [chosenAnswerItems, setChosenAnswerItems] = useState<string[]>([])
- const [unansweredQuestionIds, setUnansweredQuestionIds] = useState<number[]| undefined>([])
-const [showAnswer, setShowAnswer] = useState<boolean>(false)
-
-
-  const fetchData = async () => {
-    try { 
-    const response =await fetch('http://localhost:8000/quiz-item')
-    const json = await response.json()
-    setQuiz(json)
-    } catch (error) {
-      console.log(error)
+    type ReduceType = {
+        id?: {}
     }
-  }
+    const refs = unansweredQuestionIds?.reduce<ReduceType | any>((acc, id) => {
+        acc[id as unknown as keyof ReduceType] = createRef<HTMLDivElement | null>()
+        return acc
+    }, {})
 
+    const answerRef = createRef<HTMLDivElement | null>()
 
-useEffect(() => {
-  fetchData()
-}, [])
-
-useEffect(() => {
-const unansweredIds = quiz?.content?.map(({id}: Content)=> id)
-setUnansweredQuestionIds(unansweredIds)
-},[quiz])
-
-console.log(unansweredQuestionIds)
-
-// scroll to highest unanswered question (by id)
-useEffect(() => {
-  if (unansweredQuestionIds) {
-    if (unansweredQuestionIds.length <= 0 && chosenAnswerItems.length>= 1) {
-      setShowAnswer(true)
-      const anwserBlock= document.getElementById('answer-block')
-      anwserBlock?.scrollIntoView({behavior: 'smooth'})
+    const fetchData = async () => {
+        try {
+            const response = await fetch('http://localhost:8000/quiz-item')
+            const json = await response.json()
+            setQuiz(json)
+        } catch ( err) {
+            console.error(err)
+        }
     }
 
+    useEffect(() => {
+        fetchData()
+    } , [])
 
-  const highestId= Math.min(...unansweredQuestionIds)
-  const highestElement = document.getElementById(String(highestId))
-  highestElement?.scrollIntoView({behavior: 'smooth'})
-  }
-},[unansweredQuestionIds, chosenAnswerItems, showAnswer])
+   useEffect(() => {
+       const unansweredIds = quiz?.content?.map(({id} : Content) => id)
+       setUnansweredQuestionIds(unansweredIds)
+   }, [quiz])
 
 
-//  Renders the Title, Subtitle, and a series of questions represented by 'QuestionsBlock' components
-  
- return (
-    <div className='app'>
+    useEffect(() => {
+        if (chosenAnswerItems.length > 0 && unansweredQuestionIds) {
+            if (showAnswer && answerRef.current) {
+                answerRef.current.scrollIntoView({behavior: 'smooth'})
+            }
+
+            if (unansweredQuestionIds.length <= 0 && chosenAnswerItems.length >= 1) {
+                setShowAnswer(true)
+            } else {
+                const highestId = Math.min(...unansweredQuestionIds)
+                refs[highestId].current.scrollIntoView({behavior: 'smooth'})
+            }
+        }
+
+
+    }, [unansweredQuestionIds, chosenAnswerItems.length, showAnswer, answerRef.current, refs])
+
+  return (
+    <div className="app">
       <Title title={quiz?.title} subtitle={quiz?.subtitle}/>
-      {/* the map method iterates over each element in the 'quiz.content' array. For each element, a 'QuestionsBlock' Component is rendered */}
-      {quiz?.content.map((content: Content, id: Content['id'])  => (
-      <QuestionsBlock 
-      key={id}
-        quizItem={content}
-        setChosenAnswerItems={setChosenAnswerItems}
-        setUnansweredQuestionIds={setUnansweredQuestionIds}
-        unansweredQuestionIds={unansweredQuestionIds}
-        chosenAnswerItems={chosenAnswerItems}
-    />
-    ))}
-    {showAnswer && <AnswerBlock answerOptions={quiz?.answers} chosenAnswers={chosenAnswerItems}/>}
+        {refs && quiz?.content.map((content: Content) => (
+            <QuestionsBlock
+                key={content.id}
+                quizItem={content}
+                chosenAnswerItems={chosenAnswerItems}
+                setChosenAnswerItems={setChosenAnswerItems}
+                unansweredQuestionIds={unansweredQuestionIds}
+                setUnansweredQuestionIds={setUnansweredQuestionIds}
+                ref={refs[content.id]}
+            />
+        ))}
+        {showAnswer &&
+        <AnswerBlock
+            answerOptions={quiz?.answers}
+            chosenAnswers={chosenAnswerItems}
+            ref={answerRef}
+        />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -8,7 +8,7 @@
       "text": "Pick a vacation destination:",
       "questions": [
         {
-          "text": "New York City",
+          "text": "New York",
           "image": "https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIweW9ya3xlbnwwfHwwfHw%3D&fit=crop&h=230&w=320&crop=edges",
           "alt": "Photo of Empire State Building",
           "credit": "Oliver Niblett"
@@ -99,362 +99,422 @@
       "combination": ["New York", "Pizza", "Traditional"],
       "text": "Blue Cheese",
       "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&w=400&h=400&fit=fillmax",
-      "alt": "blue cheese"
+      "alt": "blue cheese",
+      "bio": "Congrats! You are a cheese characterized by its blue-green veins or spots, which are the result of the mold Penicillium being added during the cheese-making process!"
     },
     {
       "combination": ["Austin", "Pasta", "Modern"],
       "text": "Cheddar",
       "image": "https://images.unsplash.com/photo-1618164436241-4473940d1f5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "alt": "cheddar cheese"
+      "alt": "cheddar cheese",
+      "bio": "Congrats! You are a popular hard cheese that originated in the English village of Cheddar!"
     },
     {
       "combination": ["Portland", "Sandwich", "Mountains"],
       "text": "Feta",
       "image": "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      "alt": "feta"
+      "alt": "feta",
+      "bio": "You are a brined cheese that is typically made from sheep's milk, although it can also be made from a mixture of sheep's and goat's milk!"
     },
     {
       "combination": ["New Orleans", "Hamburger", "House"],
       "text": "Halloumi",
       "image": "https://images.unsplash.com/photo-1598167912234-02576c0c5f16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "alt": "halloumi"
+      "alt": "halloumi",
+      "bio": "You are a semi-hard cheese that is commonly used in Mediterranean and Middle Eastern cuisine !"
     },
     {
       "combination": ["New York", "Pizza", "Modern"],
       "text": "Goya",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Queso_Goya.jpg",
-      "alt": "Goya"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Queso_Goya.jpg",
+      "alt": "Goya",
+      "bio": "You are a type of cheese that originates from the Mexican state of Querétaro!"
     },
     {
       "combination": ["New York", "Pizza", "Mountains"],
       "text": "Red Hawk",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cowgirl_Creamery_Point_Reyes_-_Red_Hawk_cheese.jpg",
-      "alt": "Red Hawk"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cowgirl_Creamery_Point_Reyes_-_Red_Hawk_cheese.jpg/440px-Cowgirl_Creamery_Point_Reyes_-_Red_Hawk_cheese.jpg",
+      "alt": "Red Hawk",
+      "bio": "You are a type of soft, triple-cream cheese that is made in California!"
     },
     {
       "combination": ["New York", "Pizza", "House"],
       "text": "Pepper Jack",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pepperjack_Cheese.jpg",
-      "alt": "Pepper Jack"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pepperjack_Cheese.jpg/1200px-Pepperjack_Cheese.jpg",
+      "alt": "Pepper Jack",
+      "bio": "You are a popular American cheese that is made from a blend of Monterey Jack cheese and spicy peppers such as jalapeños!"
     },
     {
       "combination": ["New York", "Pasta", "Traditional"],
       "text": "Nacho cheese",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nachos_supreme.jpg/270px-Nachos_supreme.jpg",
-      "alt": "Nacho cheese"
+      "alt": "Nacho cheese",
+      "bio": "You are a processed cheese product that is often used as a dip for tortilla chips or as a topping for nachos!"
     },
     {
       "combination": ["New York", "Pasta", "Modern"],
       "text": "Muenster",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Block_of_Muenster_cheese.jpg",
-      "alt": "Muenster"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Munster.jpg/520px-Munster.jpg",
+      "alt": "Muenster",
+      "bio": "You are a semi-soft cheese that originated in the French region of Alsace!"
     },
     {
       "combination": ["New York", "Pasta", "Mountains"],
       "text": "Humboldt Fog",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cheese_30_bg_051906.jpg",
-      "alt": "Humboldt Fog"
+      "image": "data:image/jpeg;base64,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",
+      "alt": "Humboldt Fog",
+      "bio": "You are a a goat milk cheese that is made in California. It has a distinctive ash-covered rind and a creamy interior that is dotted with a layer of vegetable ash!"
     },
     {
       "combination": ["New York", "Pasta", "House"],
       "text": "Brick",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brickcheese.jpg",
-      "alt": "Brick"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brickcheese.jpg/440px-Brickcheese.jpg",
+      "alt": "Brick",
+      "bio": "You are a semi-soft cheese that originated in the United States. It has a pale yellow interior and a washed rind that can range from light to dark orange!"
     },
     {
       "combination": ["New York", "Sandwich", "Traditional"],
       "text": "Oaxaca",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quesillo_de_Oaxaca.png",
-      "alt": "Oaxaca"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quesillo_de_Oaxaca.png/440px-Quesillo_de_Oaxaca.png",
+      "alt": "Oaxaca",
+      "bio": "You are a Mexican cheese that is similar in texture to mozzarella. It has a pale white color and a stringy, elastic texture that makes it ideal for melting!"
     },
     {
       "combination": ["New York", "Sandwich", "Modern"],
       "text": "Criollo",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fromage_criollo._%2815228806466%29.jpg",
-      "alt": "Criollo"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fromage_criollo._%2815228806466%29.jpg/440px-Fromage_criollo._%2815228806466%29.jpg",
+      "alt": "Criollo",
+      "bio": "You are a type of cheese that originates from the Caribbean and Latin America. It is made from the milk of Criollo cattle, which are a breed of cattle that are native to the region!"
     },
     {
       "combination": ["New York", "Sandwich", "Mountains"],
       "text": "Asadero",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tlayuda_con_Quesillo%2C_Oaxaca.jpg",
-      "alt": "Asadero"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Asadero_cheese_from_Licon_Dairy.jpg/440px-Asadero_cheese_from_Licon_Dairy.jpg",
+      "alt": "Asadero",
+      "bio": "You are a Mexican cheese that is similar in texture to mozzarella. It has a pale yellow color and a mild, buttery flavor!"
     },
     {
       "combination": ["New York", "Sandwich", "House"],
       "text": "Añejo",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Queso_a%C3%B1ejo.JPG/270px-Queso_a%C3%B1ejo.JPG",
-      "alt": "Añejo"
+      "alt": "Añejo",
+      "bio": "You are a Mexican cheese that is aged for several months or even years. It has a hard, crumbly texture and a sharp, tangy flavor!"
     },
     {
       "combination": ["New York", "Hamburger", "Traditional"],
       "text": "Adobera",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Adobera.png/270px-Adobera.png",
-      "alt": "Adobera"
+      "alt": "Adobera",
+      "bio": "You are a Mexican cheese that is often used in cooking. It has a semi-soft texture and a mild, slightly tangy flavor!"
     },
     {
       "combination": ["New York", "Hamburger", "Modern"],
       "text": "Quesillo",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quesillo_de_Oaxaca.png/270px-Quesillo_de_Oaxaca.png",
-      "alt": "Quesillo"
+      "alt": "Quesillo",
+      "bio": "You are a soft, white cheese that is popular in Latin America, particularly in Venezuela and Colombia. It has a smooth, creamy texture and a mild, slightly tangy flavor!"
     },
     {
       "combination": ["New York", "Hamburger", "Mountains"],
       "text": "Cuajada",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Cuajada.jpg",
-      "alt": "Cuajada"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Cuajada.jpg/600px-Cuajada.jpg",
+      "alt": "Cuajada",
+      "bio": "You are a fresh, unripened cheese that is popular in Spain and Latin America. It is made by curdling milk with rennet, which separates the milk into solid curds and liquid whey!"
     },
     {
       "combination": ["New York", "Hamburger", "House"],
       "text": "Turrialba",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Queso_Turrialba.jpg",
-      "alt": "Turrialba"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Queso_Turrialba.jpg/440px-Queso_Turrialba.jpg",
+      "alt": "Turrialba",
+      "bio": "You are a Costa Rican cheese that is made from cow's milk. It has a pale yellow color and a smooth, creamy texture!"
     },
 
     {
       "combination": ["Austin", "Pizza", "Traditional"],
       "text": "Palmito",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Palmito_cheese.jpg",
-      "alt": "Palmito"
+      "image": "data:image/jpeg;base64,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",
+      "alt": "Palmito",
+      "bio": "You are a Brazilian cheese that is made from the heart of the palm tree. It has a soft, creamy texture and a mild, slightly tangy flavor!"
     },
     {
       "combination": ["Austin", "Pizza", "Modern"],
       "text": "Pikauba",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Pikauba_%28fromage%29_03.jpg/270px-Pikauba_%28fromage%29_03.jpg",
-      "alt": "Pikauba"
+      "alt": "Pikauba",
+      "bio": "You are a semi-firm cheese, farmer made by hand, in the region Saguenay Lac-Saint-Jean in Quebec!"
     },
     {
       "combination": ["Austin", "Pizza", "Mountains"],
       "text": "Hellim",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Halloumislicefresh.jpg/270px-Halloumislicefresh.jpg",
-      "alt": "Hellim"
+      "alt": "Hellim",
+      "bio": "You are a semi-hard, unripened cheese that is commonly consumed in Cyprus, Turkey, and the Middle East!"
     },
     {
       "combination": ["Austin", "Pizza", "House"],
       "text": "Beyaz peynir",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/White_cheese_from_Turkey.jpg/270px-White_cheese_from_Turkey.jpg",
-      "alt": "Beyaz peynir"
+      "alt": "Beyaz peynir",
+      "bio": "You are a Turkish cheese that is made from sheep's milk, cow's milk or a mixture of both. It is a brined cheese, which means it is soaked in saltwater solution after being formed into blocks!"
     },
     {
       "combination": ["Austin", "Pasta", "Traditional"],
       "text": "Nabulsi",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%D8%AC%D8%A8%D9%86%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3%D9%8A%D8%A9.jpg",
-      "alt": "Nabulsi"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%D8%AC%D8%A8%D9%86%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3%D9%8A%D8%A9.jpg/440px-%D8%AC%D8%A8%D9%86%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3%D9%8A%D8%A9.jpg",
+      "alt": "Nabulsi",
+      "bio": "You are a Nabulsi cheese is a type of cheese that originates from the city of Nablus in the West Bank, Palestine. It is a semi-hard, unripened cheese that is made from sheep's milk, and sometimes cow's milk, and is commonly consumed throughout the Middle East and Mediterranean region!"
     },
     {
       "combination": ["Austin", "Pasta", "Mountains"],
       "text": "Jameed",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Jameed.JPG/270px-Jameed.JPG",
-      "alt": "Jameed"
+      "alt": "Jameed",
+      "bio": "You are a cheese that is also known as rock cheese! It is a traditional fermented dairy product that is commonly consumed in Jordan, Palestine, and other Middle Eastern countries."
     },
     {
       "combination": ["Austin", "Pasta", "House"],
       "text": "Labneh",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Labneh01.jpg",
-      "alt": "Labneh"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Labneh01.jpg/500px-Labneh01.jpg",
+      "alt": "Labneh",
+      "bio": "You are a type of soft cheese that is popular in Middle Eastern cuisine. It is made by straining yogurt to remove the whey, resulting in a thick, creamy cheese with a tangy flavor!"
     },
     {
       "combination": ["Austin", "Sandwich", "Traditional"],
       "text": "Pot Cheese",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Kupe_paniri.jpg",
-      "alt": "Pot Cheese"
+      "alt": "Pot Cheese",
+      "bio": "You are a type of fresh cheese that is made from curdled milk. It is called pot cheese because it is traditionally made by heating milk in a pot, adding an acidic ingredient such as vinegar or lemon juice to curdle the milk, and then straining the mixture through cheesecloth!"
     },
     {
       "combination": ["Austin", "Sandwich", "Modern"],
       "text": "Rumi",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flickr_-_Tour_d%27Afrique_-_ArabicCheese.jpg",
-      "alt": "Rumi"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flickr_-_Tour_d%27Afrique_-_ArabicCheese.jpg/440px-Flickr_-_Tour_d%27Afrique_-_ArabicCheese.jpg",
+      "alt": "Rumi",
+      "bio": "You are a type of soft, unripened cheese that is traditionally made in Lebanon, Syria, and other Middle Eastern countries. It is made from a mixture of cow's and sheep's milk, and is known for its creamy texture and tangy flavor!"
     },
     {
       "combination": ["Austin", "Sandwich", "Mountains"],
       "text": "Mish",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mesh.jpg/270px-Mesh.jpg",
-      "alt": "Mish"
+      "alt": "Mish",
+      "bio": "You are a a type of soft, unripened cheese that is commonly consumed in Lebanon, Syria, and other Middle Eastern countries. It is made by curdling a mixture of cow's and sheep's milk with an acidic agent, such as vinegar or lemon juice, and then straining the curds to remove the whey!"
     },
     {
       "combination": ["Austin", "Sandwich", "House"],
       "text": "Domiati",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Domiati_cheese.jpg/270px-Domiati_cheese.jpg",
-      "alt": "Domiati"
+      "alt": "Domiati",
+      "bio": "You are a traditional soft cheese from Egypt, made from buffalo milk or cow's milk. It has a crumbly texture and a slightly salty taste!"
     },
     {
       "combination": ["Austin", "Hamburger", "Traditional"],
       "text": "Bryndza",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Bryndza.jpg/270px-Bryndza.jpg",
-      "alt": "Bryndza"
+      "alt": "Bryndza",
+      "bio": "You are a type of cheese from Eastern Europe, made from sheep's milk or a mixture of sheep's milk and cow's milk. It has a tangy flavor and a crumbly texture, and is commonly used in traditional dishes such as pierogi and bryndzové halušky!"
     },
     {
       "combination": ["Austin", "Hamburger", "Modern"],
       "text": "Grevé",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wedge_of_Swedish_Grev%C3%A9_cheese.jpg/270px-Wedge_of_Swedish_Grev%C3%A9_cheese.jpg",
-      "alt": "Grevé"
+      "alt": "Grevé",
+      "bio": "You are a semi-hard cheese from Sweden, made from cow's milk. It has a nutty and slightly sweet flavor, with a texture that is similar to Gouda or Cheddar cheese!"
     },
     {
       "combination": ["Austin", "Hamburger", "Mountains"],
       "text": "Parenica",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Parenica.jpg/270px-Parenica.jpg",
-      "alt": "Parenica"
+      "alt": "Parenica",
+      "bio": "You are a raditional cheese from Slovakia, made from sheep's milk or a mixture of sheep's milk and cow's milk. It has a firm texture and a tangy flavor, with a slightly spicy aroma!"
     },
     {
       "combination": ["Austin", "Hamburger", "House"],
       "text": "Korbáčiky",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%C3%9Aden%C3%BD_korb%C3%A1%C4%8Dik_%28Slovakia%29.jpg/270px-%C3%9Aden%C3%BD_korb%C3%A1%C4%8Dik_%28Slovakia%29.jpg",
-      "alt": "Korbáčiky"
+      "alt": "Korbáčiky",
+      "bio": "You are a type of traditional cheese snack from Slovakia. They are made by rolling out dough and sprinkling it with grated cheese, then baking it until crispy!"
     },
     {
       "combination": ["Portland", "Pizza", "Mountains"],
       "text": "Liptauer",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Liptauer.jpg/270px-Liptauer.jpg",
-      "alt": "Liptauer"
+      "alt": "Liptauer",
+      "bio": "You are a type of spreadable cheese from Hungary, Austria, and Slovakia. It is made by blending sheep's milk cheese, such as bryndza, with butter, paprika, caraway seeds, and other spices!"
     },
     {
       "combination": ["Portland", "Pizza", "House"],
       "text": "Tvorog",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tvorog.jpg/270px-Tvorog.jpg",
-      "alt": "Tvorog"
+      "alt": "Tvorog",
+      "bio": "You are a type of fresh cheese from Russia and other Eastern European countries. It is made by curdling milk with an acidic agent, such as vinegar or lemon juice, and then straining the mixture to remove the whey!"
     },
     {
       "combination": ["Portland", "Pasta", "Traditional"],
       "text": "Circassian",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/%D0%90%D0%B4%D1%8B%D0%B3%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D1%8B%D1%80.jpg",
-      "alt": "Circassian"
+      "image": "data:image/jpeg;base64,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",
+      "alt": "Circassian",
+      "bio": "You are a traditional cheese from the North Caucasus region of Russia. It is made from cow's milk or a mixture of cow's and goat's milk, and has a tangy and slightly salty flavor!"
     },
     {
       "combination": ["Portland", "Pasta", "Modern"],
       "text": "Cașcaval",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Penteleu.jpg",
-      "alt": "Cașcaval"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kaschkawal_Kashkaval_%D0%BA%D0%B0%D1%88%D0%BA%D0%B0%D0%B2%D0%B0%D0%BB_Balkank%C3%A4se_Sofia_IMG_7649.JPG/440px-Kaschkawal_Kashkaval_%D0%BA%D0%B0%D1%88%D0%BA%D0%B0%D0%B2%D0%B0%D0%BB_Balkank%C3%A4se_Sofia_IMG_7649.JPG",
+      "alt": "Cașcaval",
+      "bio": "You are a type of semi-hard cheese that originated in Romania, but is also popular in other Eastern European countries. It is made from cow's milk and has a creamy texture with a slightly tangy and salty flavor!"
     },
     {
       "combination": ["Portland", "Pasta", "Mountains"],
       "text": "Telemea",
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Telemea.jpg",
-      "alt": "Telemea"
+      "alt": "Telemea",
+      "bio": "You are a traditional cheese from Romania, but also common in other Balkan countries like Bulgaria and Serbia. It is made from sheep's milk or a mixture of sheep's milk and cow's milk, and has a crumbly texture with a slightly salty and tangy flavor!"
     },
     {
       "combination": ["Portland", "Pasta", "House"],
       "text": "Requeijão",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/RequeijaoCremoso.jpg",
-      "alt": "Requeijão"
+      "alt": "Requeijão",
+      "bio": "You are a type of soft, spreadable cheese that is popular in Portugal and Brazil. It is made from cow's milk and has a creamy texture with a mild, slightly sweet flavor!"
     },
     {
       "combination": ["Portland", "Sandwich", "Traditional"],
       "text": "Norvegia",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Norvegia_Vellagret.JPG",
-      "alt": "Norvegia"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Norvegia_Vellagret.JPG/440px-Norvegia_Vellagret.JPG",
+      "alt": "Norvegia",
+      "bio": "You are a popular brand of cheese in Norway, but it is also used to refer to a type of mild, semi-hard cheese. It is made from cow's milk and has a smooth texture with a mild, slightly sweet flavor!"
     },
     {
       "combination": ["Portland", "Sandwich", "Modern"],
       "text": "Jarlsberg",
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Jarlsberg_cheese.jpg",
-      "alt": "Jarlsberg"
+      "alt": "Jarlsberg",
+      "bio": "You are a mild, semi-hard cheese that originated in Norway. It is made from cow's milk and has a smooth texture with a nutty, slightly sweet flavor!"
     },
     {
       "combination": ["Portland", "Sandwich", "House"],
       "text": "Gamalost",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Gamalost-NorwegianOldCheese.jpg",
-      "alt": "Gamalost"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Gamalost-NorwegianOldCheese.jpg/480px-Gamalost-NorwegianOldCheese.jpg",
+      "alt": "Gamalost",
+      "bio": "You are a traditional cheese from Norway that is made from sour milk and has a strong, pungent flavor. It is often used as a seasoning or flavoring agent in traditional Norwegian dishes, such as rømmegrøt or lapskaus!"
     },
     {
       "combination": ["Portland", "Hamburger", "Traditional"],
       "text": "Brunost",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Brunost.jpg",
-      "alt": "Brunost"
+      "alt": "Brunost",
+      "bio": "You are a traditional cheese from Norway that is made from whey and has a caramel-like flavor and texture. It is often used as a spread for bread or crackers and is also popular in traditional Norwegian dishes like vaffler or lefse!"
     },
     {
       "combination": ["Portland", "Hamburger", "Modern"],
       "text": "Pannónia",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Emmental_015.jpg",
-      "alt": "Pannónia"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Emmental_de_Savoie.jpg/440px-Emmental_de_Savoie.jpg",
+      "alt": "Pannónia",
+      "bio": "You are a cheese!"
     },
     {
       "combination": ["Portland", "Hamburger", "Mountains"],
       "text": "Orda",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Urd%C4%83.png",
-      "alt": "Orda"
+      "alt": "Orda",
+      "bio": "You are a soft, fresh cheese that originated in Central Asia and is also popular in Russia and Ukraine. It is made from cow's, goat's, or sheep's milk and has a crumbly texture with a tangy, slightly sour flavor!"
     },
     {
       "combination": ["Portland", "Hamburger", "House"],
       "text": "Trappista",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TrappistenKaeseOffen_1.jpg",
-      "alt": "Trappista"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Trappista_cheese_original.jpg/440px-Trappista_cheese_original.jpg",
+      "alt": "Trappista",
+      "bio": "You are a semi-hard, mild cheese that originated in Hungary but is also popular in other Eastern European countries. It is made from cow's milk and has a smooth, creamy texture with a mild, slightly tangy flavor!"
     },
     {
       "combination": ["New Orleans", "Pizza", "Mountains"],
       "text": "Myzithra",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Homemade_Mizithra.jpg/2560px-Homemade_Mizithra.jpg",
-      "alt": "Myzithra"
+      "alt": "Myzithra",
+      "bio": "You are a traditional cheese from Greece that is made from sheep's milk or a mixture of sheep's and goat's milk. It has a crumbly texture and a slightly tangy, salty flavor!"
     },
     {
       "combination": ["New Orleans", "Pizza", "House"],
       "text": "Metsovone",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%CE%9C%CE%B5%CF%84%CF%83%CE%BF%CE%B2%CF%8C%CE%BD%CE%B5_6304.jpg",
-      "alt": "Metsovone"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%CE%9C%CE%B5%CF%84%CF%83%CE%BF%CE%B2%CF%8C%CE%BD%CE%B5_6304.jpg/440px-%CE%9C%CE%B5%CF%84%CF%83%CE%BF%CE%B2%CF%8C%CE%BD%CE%B5_6304.jpg",
+      "alt": "Metsovone",
+      "bio": "You are a semi-hard cheese that originated in Greece and is named after the city of Metsovo. It is made from cow's milk and has a smoky flavor due to being smoked over beechwood chips!"
     },
     {
       "combination": ["New Orleans", "Pasta", "Traditional"],
       "text": "Manouri",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Manouri.jpg",
-      "alt": "Manouri"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Manouri.jpg/440px-Manouri.jpg",
+      "alt": "Manouri",
+      "bio": "You are a semi-soft, fresh cheese that originated in Greece. It is made from the whey that is leftover from feta production, and has a creamy texture with a tangy, slightly sweet flavor!"
     },
     {
       "combination": ["New Orleans", "Pasta", "Modern"],
       "text": "Aura",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aura_juusto.jpg",
-      "alt": "Aura"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aura_juusto.jpg/440px-Aura_juusto.jpg",
+      "alt": "Aura",
+      "bio": "You are a blue cheese that originated in Finland. It is made from cow's milk and has a creamy texture with a tangy, slightly sweet flavor!"
     },
     {
       "combination": ["New Orleans", "Pasta", "Mountains"],
       "text": "Saga",
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Soft_and_creamy_Saga_cheese.jpg",
-      "alt": "Saga"
+      "alt": "Saga",
+      "bio": "You are a mild blue cheese that originated in Denmark. It is made from cow's milk and has a creamy texture with a mild, slightly tangy flavor!"
     },
     {
       "combination": ["New Orleans", "Pasta", "House"],
       "text": "Danish Blue",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Danish_Blue_cheese.jpg",
-      "alt": "Danish Blue"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Danish_Blue_cheese.jpg/440px-Danish_Blue_cheese.jpg",
+      "alt": "Danish Blue",
+      "bio": "You are a blue cheese that originated in Denmark. It is made from cow's milk and has a creamy texture with a tangy, salty flavor!"
     },
     {
       "combination": ["New Orleans", "Sandwich", "Traditional"],
       "text": "Esrom",
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Esrom.jpg",
-      "alt": "Esrom"
+      "alt": "Esrom",
+      "bio": "You are a semi-soft cheese that originated in Denmark. It is made from cow's milk and has a creamy, buttery texture with a mild, slightly tangy flavor!"
     },
     {
       "combination": ["New Orleans", "Sandwich", "Modern"],
       "text": "Staazer",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Staazer_Heublumenk%C3%A4se_SB_01_WikiCheese_Lokal_K.jpg",
-      "alt": "Staazer"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Staazer_Heublumenk%C3%A4se_SB_01_WikiCheese_Lokal_K.jpg/800px-Staazer_Heublumenk%C3%A4se_SB_01_WikiCheese_Lokal_K.jpg?20141207213735",
+      "alt": "Staazer",
+      "bio": "You are a hard cheese that originated in Switzerland. It is made from sheep's milk and has a firm texture with a nutty, slightly sweet flavor!"
     },
     {
       "combination": ["New Orleans", "Sandwich", "Mountains"],
       "text": "Kashkaval",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Kaschkawal_Kashkaval_%D0%BA%D0%B0%D1%88%D0%BA%D0%B0%D0%B2%D0%B0%D0%BB_Balkank%C3%A4se_Sofia_IMG_7649.JPG",
-      "alt": "Kashkaval"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Kaschkawal_Kashkaval_%D0%BA%D0%B0%D1%88%D0%BA%D0%B0%D0%B2%D0%B0%D0%BB_Balkank%C3%A4se_Sofia_IMG_7649.JPG/1280px-Kaschkawal_Kashkaval_%D0%BA%D0%B0%D1%88%D0%BA%D0%B0%D0%B2%D0%B0%D0%BB_Balkank%C3%A4se_Sofia_IMG_7649.JPG",
+      "alt": "Kashkaval",
+      "bio": "You are a semi-hard cheese that originated in the Balkans and is popular throughout Eastern Europe and the Middle East!"
     },
     {
       "combination": ["New Orleans", "Sandwich", "House"],
       "text": "Sura Kees",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sura-Kees.JPG/1280px-Sura-Kees.JPG",
-      "alt": "Sura Kees"
+      "alt": "Sura Kees",
+      "bio": "You are a semi-hard cheese that originated in Suriname. It is made from cow's milk and has a firm texture with a mild, slightly sweet flavor!"
     },
     {
       "combination": ["New Orleans", "Hamburger", "Traditional"],
       "text": "Paneer",
       "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      "alt": "Paneer"
+      "alt": "Paneer",
+      "bio": "You are a soft, fresh cheese that originated in India. It is made by curdling milk with lemon juice or vinegar, and then pressing it into a solid block!"
     },
     {
       "combination": ["New Orleans", "Hamburger", "Modern"],
       "text": "Camembert",
       "image": "https://images.unsplash.com/photo-1634487359989-3e90c9432133?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
-      "alt": "Camembert"
+      "alt": "Camembert",
+      "bio": "You are a soft, bloomy-rind cheese that originated in France. It is made from cow's milk and has a creamy, buttery texture with a tangy, earthy flavor!"
     },
     {
       "combination": ["New Orleans", "Hamburger", "Mountains"],
       "text": "Sainte-Colome",
       "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80",
-      "alt": "sanite colome"
+      "alt": "sanite colome",
+      "bio": "You are a soft, washed-rind cheese that originated in France. It is made from cow's milk and has a creamy texture with a pungent, slightly spicy flavor!"
     }
   ]
 }

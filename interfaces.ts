@@ -15,6 +15,7 @@ interface Answer {
   text: string;
   image: string;
   alt: string;
+  bio: string;
   combination: string[];
 }
 

@@ -18,7 +18,7 @@ app.get("/quiz-item", async (req: Request, res: Response) => {
     });
     if (response.status === 200) {
       const quizItem: QuizData = await response.data.data[
-        "ffc812e3-df60-4f40-a411-3bb6660c1101"
+        "8b657a1e-60ac-476b-85c4-154441f52017"
       ];
       res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
       res.send(quizItem);
